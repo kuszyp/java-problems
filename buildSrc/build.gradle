@@ -1,0 +1,34 @@
+plugins {
+  id 'java'
+  id 'groovy'
+//  id 'groovy-gradle-plugin'
+}
+
+repositories {
+//  gradlePluginPortal()
+  mavenCentral()
+}
+
+//plugins {
+////  id 'groovy'
+//  id 'java'
+//}
+//
+java {
+  sourceCompatibility = '21'
+  targetCompatibility = '21'
+}
+//
+//allprojects {
+//  group 'pl.myapp.java'
+//  version '0.0.1-SNAPSHOT'
+//}
+//
+//subprojects {
+//  apply plugin: 'java'
+//  apply plugin: 'groovy'
+//
+//  repositories {
+//    mavenCentral()
+//  }
+//}

@@ -1,0 +1,4 @@
+rootProject.name = 'java-problems'
+
+include 'two-sum'
+include 'ip-regex'
