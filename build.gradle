@@ -1,6 +1,8 @@
 plugins {
   // Apply the application plugin to add support for building a CLI application in Java
   id 'application'
+
+  id('maven-publish')
 }
 
 repositories {
@@ -10,22 +12,20 @@ repositories {
 
 dependencies {
   // Use JUnit Jupiter for testing
-//  testImplementation libs.junit.jupiter
+  testImplementation libs.junit.jupiter
+
+  testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+
+  implementation libs.guava
 }
 
-// Apply a specific Java toolchain to ease working on different environments
-java {
-  toolchain {
-      languageVersion = JavaLanguageVersion(21)
+publishing {
+  publications {
+    maven(MavenPublication) {
+      from components.java
+      groupId = 'pl.myapp.java'
+      artifactId = 'java-problems'
+      version = '0.0.1-SNAPSHOT'
+    }
   }
-}
-
-application {
-  // Define the main class for the application
-  //mainClass = ''
-}
-
-tasks.unamed('test') {
-  // Use JUnit Platform for unit tests.
-  useJUnitPlatform()
 }
