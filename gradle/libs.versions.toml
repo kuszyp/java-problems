@@ -2,15 +2,9 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-#groovy = "3.0.22"
 guava = "33.2.1-jre"
-#junit = "4.13.2"
-#spock-core = "2.2-groovy-3.0"
 junit-jupiter = "5.11.3"
 
 [libraries]
-#groovy = { module = "org.codehaus.groovy:groovy", version.ref = "groovy" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
-#junit = { module = "junit:junit", version.ref = "junit" }
-#spock-core = { module = "org.spockframework:spock-core", version.ref = "spock-core" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
