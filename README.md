@@ -13,6 +13,11 @@ programming challenges or algorithm learning materials. I've included only those
    3. [Cache](#cache)
    4. [Gradle Build Language](#gradle-build-language)
    5. [JVM Builds](#jvm-builds)
+      - Simple Java Build
+      - Changing compiler options
+      - Targeting a specific Java version
+      - Enable Java preview features
+      - Increase memory for compiling Groovy source files
 
 2. [Problems](#problems)
    1. [Problem 1 - Two sum](#two-sum)
@@ -197,6 +202,8 @@ type. This object is called the delegate object of the script.
 **Second**, each Gradle script implements the `Script` interface. This interface defines a number of properties and
 methods that could be used.
 
+#### The Project object
+
 Build script is made of zero or more statements and script blocks. Statements can include method calls, property
 assignments, and local variable definitions. The top level script blocks are listed below:
 
@@ -211,6 +218,19 @@ assignments, and local variable definitions. The top level script blocks are lis
 | `sourceSets {}`     | Configures the source sets for this project                        |
 | `subprojects {}`    | Configures the sub-projects of this build                          |
 | `publishing {}`     | Configures the PublishingExtension added by the publishing scripts |
+
+Standard `Project` properties that are commonly used:
+
+| Name         | Type   | Description                                   |
+| :----------- | :----- | :-------------------------------------------- |
+| name         | String | the fully qualified name of the project       |
+| path         | String | the name od the project directory             |
+| description  | String | description for the project                   |
+| dependencies |        | returns the dependency handler of the project |
+| repositories |        |                                               |
+| layout       |        |                                               |
+| group        |        |                                               |
+| version      |        |                                               |
 
 ### JVM Builds
 
@@ -266,9 +286,75 @@ compileJava {
 
 #### Targeting a specific Java version
 
+Using Java toolchains is a preferred way to target a language version.
+
+```groovy
+// build.gradle
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+```
+
+Using Java release version.
+
+```groovy
+// build.gradle
+
+compileJava {
+  options.release = 17
+}
+```
+
+Using Java compatibility options.
+
+```groovy
+// build.gradle
+
+java {
+  sourceCompatibility = '21'
+  targetCompatibility = '21'
+}
+```
+
+#### Enable Java preview features
+
+To enable Java preview features for compilation, test execution and runtime, use the following snippet:
+
+```groovy
+// build.gradle
+
+tasks.withType(JavaCompile).configureEach {
+  options.compilerArgs += "--enable-preview"
+}
+
+tasks.withType(Test).configureEach {
+  jvmArgs += "--enable-preview"
+}
+
+tasks.withType(JavaExec).configureEach {
+  jvmArgs += "--enable-preview"
+}
+```
+
+#### Increase memory for compiling Groovy source files
+
+```groovy
+// build.gradle
+
+tasks.withType(GroovyCompile).configureEach {
+  options.incremental = true // 1. Enable incremental compilation for Groovy source files
+  options.incrementalAfterFailure = true // 2. Continue incremental compilation after a failure
+  options.fork = true // 3. Fork the Groovy compiler process
+  options.forkOptions.jvmArgs += ["-Xms1024m", "-Xmx2048m", "-XX:MaxMetaspaceSize=1024m", "-XX:+UseParallelGC"]
+}
+```
+
 ## Problems
 
-### Problem 1 - Two sum
+### Problem 1 - two sum
 
 There is an array of integers `numbers` and an integer `target`. Your task is to create a function that returns an array with two indices of the numbers that they add up to the value of `target`.
 

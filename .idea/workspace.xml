@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/buildSrc/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/groovy/javaProblems.shared-conventions.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/two-sum/src/main/java/pl/myapp/java/problems/twoSum/SolutionWithMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc.bak/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc.bak/src/main/groovy/java-common-conventions.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ip-regex/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ip-regex/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/two-sum/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/two-sum/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/two-sum/src/test/groovy/pl/myapp/java/problems/twoSum/SolutionSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/two-sum/src/test/groovy/pl/myapp/java/problems/twoSum/SolutionsSpec.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +50,57 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java-problems" type="f1a62948:ProjectNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="ip-regex" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="ip-regex" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="ip-regex" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="ip-regex" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="two-sum" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="two-sum" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="two-sum" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="two-sum" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -85,6 +144,7 @@
   "keyToString": {
     "Gradle.SolutionSpec.executor": "Run",
     "Gradle.SolutionSpec.should return expected result.executor": "Debug",
+    "Gradle.SolutionsSpec.should return expected result.executor": "Run",
     "Gradle.buildSrc.executor": "Run",
     "Gradle.java-problems [:buildSrc:clean].executor": "Run",
     "Gradle.java-problems [build].executor": "Run",
@@ -93,14 +153,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHELLCHECK.PATH": "/home/kuszyp/.local/share/JetBrains/IdeaIC2024.3/Shell Script/shellcheck",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/kuszyp/github/kuszyp/java-problems/settings.gradle",
     "settings.editor.selected.configurable": "FeaturesTrainerSettingsPanel"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.java-problems">
-    <configuration name="SolutionSpec" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.java-problems [:buildSrc:test]">
+    <configuration name="SolutionsSpec.should return expected result" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +174,7 @@
           <list>
             <option value=":two-sum:test" />
             <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.twoSum.SolutionSpec&quot;" />
+            <option value="&quot;pl.myapp.java.problems.twoSum.SolutionsSpec.should return expected result&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,41 +185,19 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SolutionSpec.should return expected result" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="java-problems [:buildSrc:testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":two-sum:test" />
-            <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.twoSum.SolutionSpec.should return expected result&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="buildSrc" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/buildSrc" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list />
+          <list>
+            <option value=":buildSrc:testClasses" />
+          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -168,7 +207,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="java-problems [:buildSrc:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="java-problems [:buildSrc:test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -179,7 +218,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":buildSrc:clean" />
+            <option value=":buildSrc:test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,13 +249,35 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="java-problems:two-sum [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/two-sum" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.java-problems [:buildSrc:test]" />
+        <item itemvalue="Gradle.java-problems:two-sum [test]" />
+        <item itemvalue="Gradle.java-problems [:buildSrc:testClasses]" />
+        <item itemvalue="Gradle.SolutionsSpec.should return expected result" />
         <item itemvalue="Gradle.java-problems" />
-        <item itemvalue="Gradle.SolutionSpec.should return expected result" />
-        <item itemvalue="Gradle.SolutionSpec" />
-        <item itemvalue="Gradle.buildSrc" />
-        <item itemvalue="Gradle.java-problems [:buildSrc:clean]" />
       </list>
     </recent_temporary>
   </component>
