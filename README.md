@@ -12,12 +12,13 @@ programming challenges or algorithm learning materials. I've included only those
    2. [Plugins](#plugins)
    3. [Cache](#cache)
    4. [Gradle Build Language](#gradle-build-language)
+      - [The Project object](#the-project-object)
    5. [JVM Builds](#jvm-builds)
-      - Simple Java Build
-      - Changing compiler options
-      - Targeting a specific Java version
-      - Enable Java preview features
-      - Increase memory for compiling Groovy source files
+      - [Simple Java Build](#simple-java-build)
+      - [Changing compiler options](#changing-compiler-options)
+      - [Targeting a specific Java version](#targeting-a-specific-java-version)
+      - [Enable Java preview features](#enable-java-preview-features)
+      - [Increase memory for compiling Groovy source files](#increase-memory-for-compiling-groovy-source-files)
 
 2. [Problems](#problems)
    1. [Problem 1 - Two sum](#two-sum)
