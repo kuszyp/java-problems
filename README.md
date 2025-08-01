@@ -12,6 +12,7 @@ programming challenges or algorithm learning materials. I've included only those
    2. [Plugins](#plugins)
    3. [Cache](#cache)
    4. [Gradle Build Language](#gradle-build-language)
+   5. [JVM Builds](#jvm-builds)
 
 2. [Problems](#problems)
    1. [Problem 1 - Two sum](#two-sum)
@@ -210,6 +211,60 @@ assignments, and local variable definitions. The top level script blocks are lis
 | `sourceSets {}`     | Configures the source sets for this project                        |
 | `subprojects {}`    | Configures the sub-projects of this build                          |
 | `publishing {}`     | Configures the PublishingExtension added by the publishing scripts |
+
+### JVM Builds
+
+#### Simple Java Build
+
+The simplest build script for Java project is the one that applies the Java Library Plugin. By this plugin, the below
+tasks become available:
+
+- **compileJava** that compiles all the Java source files under `src/main/java`
+- **compileTestJava** task for source files under `src/test/java`
+- **test** task that runs the tests from `src/test/java`
+- **jar** task that package the `main` compiled classes and resources from `src/main/resources` into a single JAR named
+  `<project>-<version>.jar`
+- **javadoc** task that generates Javadoc from the `main`` classes
+
+```groovy
+//build.gradle
+
+plugins {
+  id 'java-library'
+}
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+
+version = '1.0.0'
+```
+
+The main `dependencies {}` glossaries are:
+
+- **compileOnly** for dependencies that are necessary to compile production code but shouldn't be part of the runtime
+  classpath,
+- **implementation** used for compilation and runtime; supersedes **compile**
+- **runtimeOnly** only used at runtime, not for compilation; supersedes **runtime**
+- **testCompileOnly** same as **compileOnly** except it is for the test
+- **testImplementation** test equivalent of **implementation**
+- **testRuntimeOnly** test equivalent of **runtimeOnly**
+
+#### Changing compiler options
+
+Most of the compiler options are accessible through the corresponding task, such as `compileJava` and `compileTestJava`.
+
+```groovy
+compileJava {
+  options.incremental = true // 1. Enable incremental compilation
+  options.fork = true // 2. Fork the compiler process
+  options.failOnError = false // 3. Do not fail the build on compilation errors
+}
+```
+
+#### Targeting a specific Java version
 
 ## Problems
 
