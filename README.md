@@ -386,4 +386,16 @@ There is an array of integers `numbers` and an integer `target`. Your task is to
 
 ## Usage
 
+Tests can be run in a scope of a single sub-project. The command is:
+
+```bash
+$ ./gradlew :sub-project:test
+```
+
+For example, to run tests of the `two-sum` sub-project, the command is:
+
+```bash
+$ ./gradlew :two-sum:test
+```
+
 ## Contact
