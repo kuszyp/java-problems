@@ -8,24 +8,24 @@ programming challenges or algorithm learning materials. I've included only those
 ## Table of Contents
 
 1. [Gradle](#gradle)
-   1. [Dependencies](#dependencies)
-   2. [Plugins](#plugins)
-   3. [Cache](#cache)
-   4. [Gradle Build Language](#gradle-build-language)
-      - [The Project object](#the-project-object)
-   5. [JVM Builds](#jvm-builds)
-      - [Simple Java Build](#simple-java-build)
-      - [Changing compiler options](#changing-compiler-options)
-      - [Targeting a specific Java version](#targeting-a-specific-java-version)
-      - [Enable Java preview features](#enable-java-preview-features)
-      - [Increase memory for compiling Groovy source files](#increase-memory-for-compiling-groovy-source-files)
+    1. [Dependencies](#dependencies)
+    2. [Plugins](#plugins)
+    3. [Cache](#cache)
+    4. [Gradle Build Language](#gradle-build-language)
+        - [The Project object](#the-project-object)
+    5. [JVM Builds](#jvm-builds)
+        - [Simple Java Build](#simple-java-build)
+        - [Changing compiler options](#changing-compiler-options)
+        - [Targeting a specific Java version](#targeting-a-specific-java-version)
+        - [Enable Java preview features](#enable-java-preview-features)
+        - [Increase memory for compiling Groovy source files](#increase-memory-for-compiling-groovy-source-files)
 
 2. [Problems](#problems)
-   1. [Problem 1 - Two sum](#two-sum)
-   2. [Problem 2 - IP Regex](#ip-regex)
-   3. Problem 3 -
-   4. Problem 4 -
-   5. Problem 5 -
+    1. [Problem 1 - Two sum](#problem-1---two-sum)
+    2. [Problem 2 - IP Regex](#problem-2---ip-regex)
+    3. [Problem 3 - Smallest positive integer](#problem-3---smallest-positive-integer)
+    4. Problem 4 -
+    5. Problem 5 -
 
 3. [Usage](#usage)
 
@@ -383,6 +383,27 @@ There is an array of integers `numbers` and an integer `target`. Your task is to
     Output: [0, 1]
 
 ### Problem 2 - IP Regex
+
+### Problem 3 - Smallest positive integer
+
+This is a demo task.
+
+Write a function:
+
+class Solution { public int solution(int[] A); }
+
+that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+
+For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+
+Given A = [1, 2, 3], the function should return 4.
+
+Given A = [−1, −3], the function should return 1.
+
+Write an efficient algorithm for the following assumptions:
+
+N is an integer within the range [1..100,000];
+each element of array A is an integer within the range [−1,000,000..1,000,000].
 
 ## Usage
 
