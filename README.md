@@ -368,42 +368,63 @@ There is an array of integers `numbers` and an integer `target`. Your task is to
 
 **Example 1:**
 
+~~~
     Input: numbers = [3, 2, 4], target = 6
     Output: [1, 2]
     Explanation: numbers[1] + numbers[2] = 2 + 4 = 6
+~~~
 
 **Example 2:**
 
+~~~
     Input: numbers = [2, 7, 11, 15], target = 9
     Output: [0, 1]
+~~~
 
 **Example 3:**
 
+~~~
     Input: numbers = [3, 3], target = 6
     Output: [0, 1]
+~~~
 
 ### Problem 2 - IP Regex
 
 ### Problem 3 - Smallest positive integer
 
-This is a demo task.
+Create a function `public int smallestPositiveInteger(int[] A)` that for given array **A** of **N** integers, will
+return the smallest positive integer that **does not occur in `A`**.
 
-Write a function:
+```java
+class Solution {
+    public int smallestPositiveInteger(int[] A) {
+        // Put your code here
 
-class Solution { public int solution(int[] A); }
+    }
+}
+```
 
-that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+**Example 1:**
 
-For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+~~~
+    For given array arr = [1, 3, 6, 4, 1, 2], the function should return 5.
+~~~
 
-Given A = [1, 2, 3], the function should return 4.
+**Example 2:**
 
-Given A = [−1, −3], the function should return 1.
+~~~
+    For arr = [1, 2, 3], the function should return 4.
+~~~
 
-Write an efficient algorithm for the following assumptions:
+**Example 3:**
 
-N is an integer within the range [1..100,000];
-each element of array A is an integer within the range [−1,000,000..1,000,000].
+~~~
+    For arr = [−1, −3], the function should return 1.
+~~~
+
+**Conditions:**
+
+$1<=N<=100000$ and each element of array **A** is an integer within the range [-1000000..1000000].
 
 ## Usage
 
