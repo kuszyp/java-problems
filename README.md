@@ -388,9 +388,15 @@ There is an array of integers `numbers` and an integer `target`. Your task is to
     Output: [0, 1]
 ~~~
 
+---
+
 ### Problem 2 - IP Regex
 
+---
+
 ### Problem 3 - Smallest positive integer
+
+The problem is also known as _First Missing Positive_.
 
 Create a function `public int smallestPositiveInteger(int[] A)` that for given array **A** of **N** integers, will
 return the smallest positive integer that **does not occur in `A`**.
@@ -422,9 +428,25 @@ class Solution {
     For arr = [−1, −3], the function should return 1.
 ~~~
 
-**Conditions:**
+**Constraints:**
 
-$1<=N<=100000$ and each element of array **A** is an integer within the range [-1000000..1000000].
+- $N = A.length$
+- $1 \leq A.length \leq 100000$
+- $-2^{31} \leq A[i] \leq 2^{31} - 1$
+
+**Solutions:**
+
+This is a naive solution with poor performance for the "Smallest Positive Integer" problem. At this stage, i hadn't yet
+recognized the relationship between the array size and the integer value being searched for.
+
+```java
+public int smallestPositiveInteger(int[] A);
+```
+
+
+
+---
+
 
 ## Usage
 
