@@ -443,10 +443,21 @@ recognized the relationship between the array size and the integer value being s
 public int smallestPositiveInteger(int[] A);
 ```
 
+One of the most strategic insights in this problem is realizing that when the positive integer is not in the given
+array, the missing one must be in a range [1, n], where n is the length of the array. Why is that? Let's consider two
+cases:
 
+- There is no missing integer in the array. For n=5 we have A = [1, 2, 3, 4, 5]. The solution in this case is 6
+- There is a missing integer in the array. For n=5 we have B = [1, 2, 4, 6, 8]. The solution is 3.
+  
+The algorithm works by placing each value into its corresponding index position - for example number 1 should go to
+index 0, 2 to index 1, and so on. The first index that miss its value is the result.
+
+```java
+public int smallestPositiveIntegerCycleSort(int[] A);
+```
 
 ---
-
 
 ## Usage
 

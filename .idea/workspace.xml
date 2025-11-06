@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="feat: add Smallest Positive Integer problem implementation and tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/src/test/groovy/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveIntegerSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/src/test/groovy/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveIntegerSpec.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +92,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.SmallestPositiveIntegerSpec.executor": "Run",
+    "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer.executor": "Debug",
     "Gradle.SolutionSpec.executor": "Run",
     "Gradle.SolutionSpec.should return expected result.executor": "Debug",
@@ -117,7 +121,7 @@
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SmallestPositiveIntegerSpec">
+  <component name="RunManager" selected="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2">
     <configuration name="SmallestPositiveIntegerSpec" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -132,6 +136,30 @@
             <option value=":smallestPositiveInteger:test" />
             <option value="--tests" />
             <option value="&quot;pl.myapp.java.problems.smallestPositiveInteger.SmallestPositiveIntegerSpec&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SmallestPositiveIntegerSpec.should return smallest positive integer v2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":smallestPositiveInteger:test" />
+            <option value="--tests" />
+            <option value="&quot;pl.myapp.java.problems.smallestPositiveInteger.SmallestPositiveIntegerSpec.should return smallest positive integer v2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,35 +238,13 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="java-problems:two-sum [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/two-sum" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2" />
         <item itemvalue="Gradle.SmallestPositiveIntegerSpec" />
         <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer" />
         <item itemvalue="Gradle.buildSrc [dependencies]" />
         <item itemvalue="Gradle.java-problems [:buildSrc:test]" />
-        <item itemvalue="Gradle.java-problems:two-sum [test]" />
       </list>
     </recent_temporary>
   </component>
