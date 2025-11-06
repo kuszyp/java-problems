@@ -16,7 +16,7 @@ public class QueensAttack2 {
    */
   public int queensAttack(int n, int k, int r_q, int c_q, List<List<Integer>> obstacles) {
     // Write your code here
-    int[][] board = new int[n][n];
+    long[][] board = new long[n][n];
     int attacks = 0;
     board[r_q - 1][c_q - 1] = 1;
     obstacles.forEach(obstacle -> board[obstacle.get(0) - 1][obstacle.get(1) - 1] = -1);
@@ -46,6 +46,17 @@ public class QueensAttack2 {
     }
 
     // left
+    row = r_q - 1;
+    col = c_q - 1;
+    while (col - 1 >= 0) {
+      if (board[row][col - 1] == -1) {
+        break;
+      }
+      board[row][col - 1] = 2;
+      attacks++;
+      col--;
+    }
+
     // right
     row = r_q - 1;
     col = c_q - 1;
@@ -84,7 +95,30 @@ public class QueensAttack2 {
       col++;
     }
     // bottom-left
+    row = r_q - 1;
+    col = c_q - 1;
+    while (row - 1 >= 0 && col - 1 >= 0) {
+      if (board[row - 1][col - 1] == -1) {
+        break;
+      }
+      board[row - 1][col - 1] = 2;
+      attacks++;
+      row--;
+      col--;
+    }
+
     // bottom-right
+    row = r_q - 1;
+    col = c_q - 1;
+    while (row - 1 >= 0 && col + 1 < n) {
+      if (board[row - 1][col + 1] == -1) {
+        break;
+      }
+      board[row - 1][col + 1] = 2;
+      attacks++;
+      row--;
+      col++;
+    }
 
     return attacks;
   }

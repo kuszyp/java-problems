@@ -24,7 +24,7 @@ programming challenges or algorithm learning materials. I've included only those
     1. [Problem 1 - Two sum](#problem-1---two-sum)
     2. [Problem 2 - IP Regex](#problem-2---ip-regex)
     3. [Problem 3 - Smallest positive integer](#problem-3---smallest-positive-integer)
-    4. Problem 4 -
+    4. [Problem 4 - Queen's Attack II](#problem-4---queens-attack-ii)
     5. Problem 5 -
 
 3. [Usage](#usage)
@@ -456,6 +456,12 @@ index 0, 2 to index 1, and so on. The first index that miss its value is the res
 ```java
 public int smallestPositiveIntegerCycleSort(int[] A);
 ```
+
+---
+
+### Problem 4 - Queen's Attack II
+
+
 
 ---
 
