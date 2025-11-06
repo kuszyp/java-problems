@@ -8,3 +8,4 @@ rootProject.name = "JavaProblems"
 include("two-sum")
 include("ip-regex")
 include("smallestPositiveInteger")
+include("queensAttack2")

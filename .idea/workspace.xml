@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="feat: add Smallest Positive Integer problem implementation and tests">
+    <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="test: use single test function to check both solutions for Smallest Positive Integer">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/queensAttack2/JavaProblems.queensAttack2.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/queensAttack2/JavaProblems.queensAttack2.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queensAttack2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/problems/queensAttack2/QueensAttack2Spec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/src/test/groovy/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveIntegerSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/src/test/groovy/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveIntegerSpec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,9 +96,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.QueensAttack2Spec.should calculate how many squares queen can attach.executor": "Debug",
     "Gradle.SmallestPositiveIntegerSpec.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2.executor": "Run",
-    "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer.executor": "Debug",
+    "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer.executor": "Run",
     "Gradle.SolutionSpec.executor": "Run",
     "Gradle.SolutionSpec.should return expected result.executor": "Debug",
     "Gradle.SolutionsSpec.should return expected result.executor": "Run",
@@ -121,7 +127,31 @@
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2">
+  <component name="RunManager" selected="Gradle.QueensAttack2Spec.should calculate how many squares queen can attach">
+    <configuration name="QueensAttack2Spec.should calculate how many squares queen can attach" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":queensAttack2:test" />
+            <option value="--tests" />
+            <option value="&quot;pl.myapp.java.problems.queensAttack2.QueensAttack2Spec.should calculate how many squares queen can attach&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="SmallestPositiveIntegerSpec" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -216,35 +246,13 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="java-problems [:buildSrc:test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":buildSrc:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2" />
-        <item itemvalue="Gradle.SmallestPositiveIntegerSpec" />
+        <item itemvalue="Gradle.QueensAttack2Spec.should calculate how many squares queen can attach" />
         <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer" />
+        <item itemvalue="Gradle.SmallestPositiveIntegerSpec" />
+        <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2" />
         <item itemvalue="Gradle.buildSrc [dependencies]" />
-        <item itemvalue="Gradle.java-problems [:buildSrc:test]" />
       </list>
     </recent_temporary>
   </component>
@@ -265,12 +273,41 @@
       <option name="project" value="LOCAL" />
       <updated>1762390304820</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add Smallest Positive Integer solution using Cycle Sort">
+      <option name="closed" value="true" />
+      <created>1762398870010</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762398870010</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test: use single test function to check both solutions for Smallest Positive Integer">
+      <option name="closed" value="true" />
+      <created>1762401129501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762401129501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="feat: add Smallest Positive Integer problem implementation and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Smallest Positive Integer problem implementation and tests" />
+    <MESSAGE value="feat: add Smallest Positive Integer solution using Cycle Sort" />
+    <MESSAGE value="test: use single test function to check both solutions for Smallest Positive Integer" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: use single test function to check both solutions for Smallest Positive Integer" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
