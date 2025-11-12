@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="feat: draft solution for Queens Attack II problem">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/queensAttack2/JavaProblems.queensAttack2.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/queensAttack2/JavaProblems.queensAttack2.test.iml" afterDir="false" />
+    <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="feat: update Queen's Attack II implementation and tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/problems/queensAttack2/QueensAttack2Spec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/problems/queensAttack2/QueensAttack2Spec.groovy" afterDir="false" />
     </list>
@@ -93,6 +91,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.QueensAttack2Spec.should calculate how many squares queen can attach.executor": "Debug",
+    "Gradle.QueensAttack2Spec.should calculate key properly.executor": "Debug",
     "Gradle.SmallestPositiveIntegerSpec.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer.executor": "Run",
@@ -123,7 +122,7 @@
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.QueensAttack2Spec.should calculate how many squares queen can attach">
+  <component name="RunManager" selected="Gradle.QueensAttack2Spec.should calculate key properly">
     <configuration name="QueensAttack2Spec.should calculate how many squares queen can attach" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,6 +137,30 @@
             <option value=":queensAttack2:test" />
             <option value="--tests" />
             <option value="&quot;pl.myapp.java.problems.queensAttack2.QueensAttack2Spec.should calculate how many squares queen can attach&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="QueensAttack2Spec.should calculate key properly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":queensAttack2:test" />
+            <option value="--tests" />
+            <option value="&quot;pl.myapp.java.problems.queensAttack2.QueensAttack2Spec.should calculate key properly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,35 +243,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="buildSrc [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/buildSrc" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QueensAttack2Spec.should calculate key properly" />
         <item itemvalue="Gradle.QueensAttack2Spec.should calculate how many squares queen can attach" />
         <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer" />
         <item itemvalue="Gradle.SmallestPositiveIntegerSpec" />
         <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2" />
-        <item itemvalue="Gradle.buildSrc [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762405412499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: update Queen's Attack II implementation and tests">
+      <option name="closed" value="true" />
+      <created>1762432556715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762432556715</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -302,6 +311,18 @@
     <MESSAGE value="feat: add Smallest Positive Integer solution using Cycle Sort" />
     <MESSAGE value="test: use single test function to check both solutions for Smallest Positive Integer" />
     <MESSAGE value="feat: draft solution for Queens Attack II problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: draft solution for Queens Attack II problem" />
+    <MESSAGE value="feat: update Queen's Attack II implementation and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update Queen's Attack II implementation and tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

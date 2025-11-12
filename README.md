@@ -461,7 +461,120 @@ public int smallestPositiveIntegerCycleSort(int[] A);
 
 ### Problem 4 - Queen's Attack II
 
+One of the HackerRank problems to solve. In my opinion interesting one because it requires thinking about the chess
+board in a different way than usual.
 
+**First lets describe the problem.**
+
+We have a chess board $n \times n$ where rows are numbered $1 \dots n$ from bottom to top. Columns are numbered $1
+\dots n$, going from left to right. Each square is referenced by a tuple $(r, c)$, describing the row $r$, and column
+$c$, where the square is located.
+
+The queen is standing at position $(r_q, c_q)$. In a single move, the queen can attack in any of the eight directions
+(left, right, up, down, and four diagonal top-left, top-right, bottom-left, bottom-right).
+
+There are $k$ obstacles on the board $K = [(r_1, c_1), (r_2, c_2), \dots (r_k, c_k)]$, preventing the queen from
+attacking any square beyond them in that direction.
+
+The goal is to find and return the number of squares the queen can attack from her position $(r_q, c_q)$.
+
+**Example 1:**
+
+For $n = 8$ we have board $8 \times 8$.  
+Queen position for $r_q = 4,  c_q = 4$ is $Q(4, 4)$.  
+$k = 0$ so there are no obstacles on the board.
+
+~~~
+     ---------------------------------
+  8  |   |   |   | + |   |   |   | + |
+     ---------------------------------
+  7  | + |   |   | + |   |   | + |   |
+     ---------------------------------
+  6  |   | + |   | + |   | + |   |   |
+     ---------------------------------
+  5  |   |   | + | + | + |   |   |   |
+     ---------------------------------
+  4  | + | + | + | Q | + | + | + | + |
+     ---------------------------------
+  3  |   |   | + | + | + |   |   |   |
+     ---------------------------------
+  2  |   | + |   | + |   | + |   |   |
+     ---------------------------------
+  1  | + |   |   | + |   |   | + |   |
+     ---------------------------------
+       1   2   3   4   5   6   7   8
+~~~
+
+The expected result is **27**. Why? Let sum up all squares the queen can attack:
+- up: 4 squares
+- down: 3 squares
+- left: 3 squares
+- right: 4 squares
+- top-left: 3 squares
+- top-right: 4 squares
+- bottom-left: 3 squares
+- bottom-right: 3 squares
+
+The result is $4 + 3 + 3 + 4 + 3 + 4 + 3 + 3 = 27$.
+
+---
+
+**Example 2:**
+
+For $n = 8$ we have board $8 \times 8$.  
+Queen position for $r_q = 5,  c_q = 3$ is $Q(5, 3)$.  
+$k = 3$ so there are three obstacles on the board. $K=[(3, 5), (1, 1), (5, 4)]$
+
+~~~
+     ---------------------------------
+  8  | K |   | + |   |   | + |   |   |
+     ---------------------------------
+  7  | + |   | + |   | + |   |   |   |
+     ---------------------------------
+  6  |   | + | + | + |   |   |   |   |
+     ---------------------------------
+  5  | + | + | Q | K |   |   |   |   |
+     ---------------------------------
+  4  |   | + | + | + |   |   |   |   |
+     ---------------------------------
+  3  | + |   | + |   | K |   |   |   |
+     ---------------------------------
+  2  |   |   | + |   |   |   |   |   |
+     ---------------------------------
+  1  |   |   | + |   |   |   |   |   |
+     ---------------------------------
+       1   2   3   4   5   6   7   8
+~~~
+
+Expected result is **17**. Number of squares the Queen can attack:
+
+- top: 3 squares
+- bottom: 4 squares
+- left: 2 squares
+- right: 0 squares (obstacle at $(5,4)$)
+- top-left: 2 squares
+- top-right: 3 squares
+- bottom-left: 2 squares
+- bottom-right: 1 square (obstacle at $(3,5)$)
+
+The result is $3 + 4 + 2 + 0 + 2 + 3 + 2 + 1 = 17$.
+
+**Constraints:**
+
+- $0 < n \leq 10^5$
+- $0 \leq k \leq 10^5$
+- A single cell may contain more than one obstacle.
+- There will never be an obstacle at the queen position.
+
+**Subtasks:**
+
+- $0 < n \leq 100$
+- $0 \leq k \leq 100$
+
+and
+
+- $0 < n \leq 1000$
+- $0 \leq k \leq 10^5$
 
 ---
 
