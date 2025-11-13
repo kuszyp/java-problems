@@ -1,8 +1,13 @@
 package pl.myapp.java.problems.queensAttack2;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class QueensAttack2 {
+  private static final int QUEEN = 1;
+  private static final int OBSTACLE = -1;
+
   /*
    * Complete the 'queensAttack' function below.
    *
@@ -15,111 +20,83 @@ public class QueensAttack2 {
    *  5. 2D_INTEGER_ARRAY obstacles
    */
   public int queensAttack(int n, int k, int r_q, int c_q, List<List<Integer>> obstacles) {
-    // Write your code here
-    long[][] board = new long[n][n];
-    int attacks = 0;
-    board[r_q - 1][c_q - 1] = 1;
-    obstacles.forEach(obstacle -> board[obstacle.get(0) - 1][obstacle.get(1) - 1] = -1);
+//    The idea to handle very big board is not to store 3D array as it is but to store the positions
+//    on the obstacles only.
 
-    int row = r_q - 1;
-    int col = c_q - 1;
-    // bottom
-    while (row - 1 >= 0) {
-      if (board[row-1][col] == -1) {
-        break;
-      }
-      board[row-1][col] = 2;
+//    A variable to store non-zero values that represents the obstacles
+    Map<Long, Integer> board = new HashMap<>();
+
+    long queenKey = key(r_q, c_q, n);
+    board.put(queenKey, QUEEN);
+
+    obstacles.forEach(
+      obstacle -> {
+        long obstacleKey = key(obstacle.get(0), obstacle.get(1), n);
+        board.put(obstacleKey, OBSTACLE);
+      });
+
+    int attacks = 0;
+
+//    up
+    int row = r_q;
+    while (++row <= n && !board.containsKey(key(row, c_q, n))) {
       attacks++;
-      row--;
     }
 
-    // top
-    row = r_q - 1;
-    col = c_q - 1;
-    while (row + 1 < n) {
-      if (board[row + 1][col] == -1) {
-        break;
-      }
-      board[row + 1][col] = 2;
+    // down
+    row = r_q;
+    while (--row >= 1 && !board.containsKey(key(row, c_q, n))) {
       attacks++;
-      row++;
     }
 
     // left
-    row = r_q - 1;
-    col = c_q - 1;
-    while (col - 1 >= 0) {
-      if (board[row][col - 1] == -1) {
-        break;
-      }
-      board[row][col - 1] = 2;
+    int col = c_q;
+    while (--col >= 1 && !board.containsKey(key(r_q, col, n))) {
       attacks++;
-      col--;
     }
 
     // right
-    row = r_q - 1;
-    col = c_q - 1;
-    while (col + 1 < n) {
-      if (board[row][col + 1] == -1) {
-        break;
-      }
-      board[row][col + 1] = 2;
+    col = c_q;
+    while (++col <= n && !board.containsKey(key(r_q, col, n))) {
       attacks++;
-      col++;
     }
 
     // top-left
-    row = r_q - 1;
-    col = c_q - 1;
-    while (row + 1 < n && col - 1 >= 0) {
-      if (board[row + 1][col - 1] == -1) {
-        break;
-      }
-      board[row + 1][col - 1] = 2;
+    row = r_q;
+    col = c_q;
+    while (++row <= n && --col >= 1 && !board.containsKey(key(row, col, n))) {
       attacks++;
-      row++;
-      col--;
     }
 
     // top-right
-    row = r_q - 1;
-    col = c_q - 1;
-    while (row + 1 < n && col + 1 < n) {
-      if (board[row + 1][col + 1] == -1) {
-        break;
-      }
-      board[row + 1][col + 1] = 2;
+    row = r_q;
+    col = c_q;
+    while (++row <= n && ++col <= n && !board.containsKey(key(row, col, n))) {
       attacks++;
-      row++;
-      col++;
     }
+
     // bottom-left
-    row = r_q - 1;
-    col = c_q - 1;
-    while (row - 1 >= 0 && col - 1 >= 0) {
-      if (board[row - 1][col - 1] == -1) {
-        break;
-      }
-      board[row - 1][col - 1] = 2;
+    row = r_q;
+    col = c_q;
+    while (--row >= 1 && --col >= 1 && !board.containsKey(key(row, col, n))) {
       attacks++;
-      row--;
-      col--;
     }
 
     // bottom-right
-    row = r_q - 1;
-    col = c_q - 1;
-    while (row - 1 >= 0 && col + 1 < n) {
-      if (board[row - 1][col + 1] == -1) {
-        break;
-      }
-      board[row - 1][col + 1] = 2;
+    row = r_q;
+    col = c_q;
+    while (--row >= 1 && ++col <= n && !board.containsKey(key(row, col, n))) {
       attacks++;
-      row--;
-      col++;
     }
 
     return attacks;
   }
+
+//  Instead of identifying the position of obstacles in 2D array
+//  using (x, y) coordinates, we can use a single long value as a key.
+//  The value must be unique for each (i, j) pair.
+  long key(int i, int j, int n) {
+    return ((long) i) * n + j;
+  }
+
 }
