@@ -4,18 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="feat: update Queen's Attack II implementation and tests">
+    <list default="true" id="1d44ed2d-697b-4066-ad97-7c389bb6499b" name="Changes" comment="feat: updated Queen's Attack II implementation to work with large chess boards">
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/groovy/javaCodingProblems.sharedConventions.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/codingproblems/queensattack2/QueensAttack2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/queensAttack2/JavaProblems.queensAttack2.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/queensAttack2/JavaProblems.queensAttack2.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/problems/queensAttack2/QueensAttack2Spec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/problems/queensAttack2/QueensAttack2Spec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/groovy/javaProblems.shared-conventions.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ip-regex/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/twoSum/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queensAttack2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/queensAttack2/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queensAttack2/src/main/java/pl/myapp/java/problems/queensAttack2/QueensAttack2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/problems/queensAttack2/QueensAttack2Spec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/queensAttack2/src/test/groovy/pl/myapp/java/codingproblems/queensattack2/QueensAttack2Spec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/codingproblems/smallestpositiveinteger/SmallestPositiveInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallestPositiveInteger/src/test/groovy/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveIntegerSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/smallestPositiveInteger/src/test/groovy/pl/myapp/java/codingproblems/smallestpositiveinteger/SmallestPositiveIntegerSpec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/two-sum/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/two-sum/src/main/java/pl/myapp/java/problems/twoSum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/twoSum/src/main/java/pl/myapp/java/codingproblems/twosum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/two-sum/src/main/java/pl/myapp/java/problems/twoSum/SolutionWithMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/twoSum/src/main/java/pl/myapp/java/codingproblems/twosum/SolutionWithMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/two-sum/src/test/groovy/pl/myapp/java/problems/twoSum/SolutionsSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/twoSum/src/test/groovy/pl/myapp/java/codingproblems/twosum/SolutionsSpec.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="EditorConfigPreviewManager">
-    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/smallestPositiveInteger/src/main/java/pl/myapp/java/problems/smallestPositiveInteger/SmallestPositiveInteger.java" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -40,12 +57,31 @@
         <task path="$PROJECT_DIR$/smallestPositiveInteger">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/queensAttack2">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="JavaProblems" type="f1a62948:ProjectNode" />
+                <item name="JavaProblemSolving" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblemSolving" type="f1a62948:ProjectNode" />
+                <item name="buildSrc" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblemSolving" type="f1a62948:ProjectNode" />
+                <item name="queensAttack2" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaProblemSolving" type="f1a62948:ProjectNode" />
+                <item name="queensAttack2" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -77,6 +113,9 @@
     &quot;accountId&quot;: &quot;3ea1b5c7-439b-4032-abad-52a68233af8a&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/jdks/eclipse_adoptium-21-amd64-linux.2/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -91,14 +130,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build java-problems.executor": "Run",
+    "Gradle.QueensAttack2Spec (1).executor": "Debug",
     "Gradle.QueensAttack2Spec.executor": "Debug",
     "Gradle.QueensAttack2Spec.should calculate how many squares queen can attach.executor": "Debug",
     "Gradle.QueensAttack2Spec.should calculate key properly.executor": "Debug",
+    "Gradle.Run all tests.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer v2.executor": "Run",
     "Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer.executor": "Run",
     "Gradle.SolutionSpec.executor": "Run",
     "Gradle.SolutionSpec.should return expected result.executor": "Debug",
+    "Gradle.SolutionsSpec.executor": "Debug",
     "Gradle.SolutionsSpec.should return expected result.executor": "Run",
     "Gradle.buildSrc [dependencies].executor": "Run",
     "Gradle.buildSrc.executor": "Run",
@@ -109,6 +152,7 @@
     "Gradle.java-problems [clean].executor": "Run",
     "Gradle.java-problems.executor": "Run",
     "Gradle.java-problems:two-sum [test].executor": "Run",
+    "JUnit.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -121,137 +165,37 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Groovy"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.QueensAttack2Spec">
-    <configuration name="QueensAttack2Spec" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager">
+    <configuration name="Run all tests" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--rerun-tasks --console=rich" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":queensAttack2:test" />
+            <option value="test" />
             <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.queensAttack2.QueensAttack2Spec&quot;" />
+            <option value="'pl.myapp.java*'" />
           </list>
         </option>
-        <option name="vmOptions" />
+        <option name="vmOptions" value="" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="QueensAttack2Spec.should calculate how many squares queen can attach" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":queensAttack2:test" />
-            <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.queensAttack2.QueensAttack2Spec.should calculate how many squares queen can attach&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="QueensAttack2Spec.should calculate key properly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":queensAttack2:test" />
-            <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.queensAttack2.QueensAttack2Spec.should calculate key properly&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SmallestPositiveIntegerSpec" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":smallestPositiveInteger:test" />
-            <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.smallestPositiveInteger.SmallestPositiveIntegerSpec&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SmallestPositiveIntegerSpec.should return smallest positive integer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":smallestPositiveInteger:test" />
-            <option value="--tests" />
-            <option value="&quot;pl.myapp.java.problems.smallestPositiveInteger.SmallestPositiveIntegerSpec.should return smallest positive integer&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.QueensAttack2Spec" />
-        <item itemvalue="Gradle.QueensAttack2Spec.should calculate how many squares queen can attach" />
-        <item itemvalue="Gradle.QueensAttack2Spec.should calculate key properly" />
-        <item itemvalue="Gradle.SmallestPositiveIntegerSpec.should return smallest positive integer" />
-        <item itemvalue="Gradle.SmallestPositiveIntegerSpec" />
+        <item itemvalue="Gradle.Run all tests" />
       </list>
     </recent_temporary>
   </component>
@@ -304,8 +248,27 @@
       <option name="project" value="LOCAL" />
       <updated>1762432556715</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: updated Queen's Attack II implementation to work with large chess boards">
+      <option name="closed" value="true" />
+      <created>1763041771763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763041771763</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -314,6 +277,15 @@
     <MESSAGE value="test: use single test function to check both solutions for Smallest Positive Integer" />
     <MESSAGE value="feat: draft solution for Queens Attack II problem" />
     <MESSAGE value="feat: update Queen's Attack II implementation and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update Queen's Attack II implementation and tests" />
+    <MESSAGE value="feat: updated Queen's Attack II implementation to work with large chess boards" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: updated Queen's Attack II implementation to work with large chess boards" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

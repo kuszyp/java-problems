@@ -1,3 +1,0 @@
-plugins {
-  id("javaProblems.shared-conventions")
-}

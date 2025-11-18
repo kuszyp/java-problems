@@ -1,0 +1,62 @@
+plugins {
+  id("java")
+  id("groovy")
+}
+
+group = "pl.myapp.java.codingproblems"
+version = "1.0.0-SNAPSHOT"
+
+repositories {
+  mavenCentral()
+}
+
+
+dependencies {
+  // Use JUnit Jupiter for testing
+  testImplementation libs.junit.jupiter
+  testImplementation libs.groovy
+  testImplementation libs.spock
+
+  testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+}
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+
+tasks.named('test', Test) {
+  useJUnitPlatform()
+
+  testLogging {
+//    set options for log level LIFECYCLE
+    events 'failed', 'passed', 'skipped'
+    exceptionFormat = 'full'
+    showExceptions = true
+    showCauses = true
+    showStackTraces = true
+
+//    set options for log level DEBUG and INFO
+    debug {
+      events 'started', 'skipped', 'failed', 'passed', 'standard_error', 'standard_out'
+      exceptionFormat = 'full'
+    }
+
+    info {
+      events 'started', 'skipped', 'failed', 'passed', 'standardError', 'standardOut'
+      exceptionFormat = 'full'
+    }
+
+  }
+}
+
+tasks.withType(JavaCompile).configureEach {
+  options.encoding = 'UTF-8'
+}
+
+tasks.withType(GroovyCompile).configureEach {
+  options.incremental = true
+  options.incrementalAfterFailure = true
+  options.forkOptions.jvmArgs += ["-Xms128m", "-Xmx256m", "-XX:MaxMetaspaceSize=128m", "-XX:+UseParallelGC"]
+}

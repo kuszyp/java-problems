@@ -355,7 +355,7 @@ tasks.withType(GroovyCompile).configureEach {
 
 ## Problems
 
-### Problem 1 - two sum
+### Problem 1 - Two sum
 
 There is an array of integers `numbers` and an integer `target`. Your task is to create a function that returns an array with two indices of the numbers that they add up to the value of `target`.
 
